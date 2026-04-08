@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <title>NexTech</title>
-
 </head>
 <body>
 
@@ -13,14 +12,13 @@
 <div class="topbar">
   <div class="contact-info">
     <span>📞 +221 76 880 34 79</span>
-    <span>✉ rokhayatambadou5@gmail.com</span>
+    <span>✉ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a7d5c8cccfc6dec6d3c6cac5c6c3c8d292e7c0cac6cecb89c4c8ca">[email&#160;protected]</a></span>
   </div>
   <div class="right">
     <a href="#">f</a>
     <a href="#">t</a>
     <a href="#">g+</a>
     <a href="#">in</a>
-    <!-- <span class="lang">EN ▾</span> -->
   </div>
 </div>
 
@@ -38,12 +36,14 @@
       <span>Entreprise Tech</span>
     </div>
   </div>
-  <div class="nav-links">
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
     <a href="#" class="active">Accueil</a>
-    <a href="#">A propos</a>
+    <a href="#">À propos</a>
     <a href="#">Services</a>
     <a href="#">Projets</a>
-    <!-- <a href="#">Pages</a> -->
     <a href="#">Blog</a>
     <a href="#">Contact</a>
   </div>
@@ -52,53 +52,47 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="img-placeholder img-team" style="position:absolute;left:0;top:0;width:55%;height:100%;"></div>
+  <img src="4.jpg" class="hero-bg-img" alt="Hero background">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Fournir un service de conseil de la meilleure qualité</h1>
-    <p>Nous sommes passionnés par l’obtention de meilleurs résultats pour nos clients, des résultats qui vont au-delà des aspects financiers et qui sont entièrement personnalisés.</p>
+    <p>Nous sommes passionnés par l'obtention de meilleurs résultats pour nos clients, des résultats qui vont au-delà des aspects financiers et qui sont entièrement personnalisés.</p>
     <div class="hero-buttons">
       <button class="btn-outline">En savoir plus</button>
       <button class="btn-gold">Contactez-Nous</button>
     </div>
   </div>
-  <button class="hero-arrow left">‹</button>
-  <button class="hero-arrow right">›</button>
+  <button class="hero-arrow left">&#8249;</button>
+  <button class="hero-arrow right">&#8250;</button>
 </section>
 
 <!-- WELCOME -->
 <section class="section welcome">
   <span class="section-eyebrow">Bienvenue dans notre cabinet</span>
-  <h2>Depuis plusieurs années, nous accompagnons les entreprises dans leur développement en proposant des solutions de conseil sur mesure. Notre expertise nous a permis de collaborer avec de grandes organisations ainsi qu’avec de nombreux particuliers.</h2>
+  <h2>Depuis plusieurs années, nous accompagnons les entreprises dans leur développement en proposant des solutions de conseil sur mesure. Notre expertise nous a permis de collaborer avec de grandes organisations ainsi qu'avec de nombreux particuliers.</h2>
   <div class="divider"></div>
   <div class="cards-grid">
     <div class="card">
-      <div class="card-img"><img src="1.jpg" alt=""></div>
+      <div class="card-img"><img src="1.jpg" alt="Notre méthodologie"></div>
       <div class="card-body">
-        <h3>Notre methodologie</h3>
-        <p>Notre méthodologie repose sur une approche structurée et centrée sur le client. 
-Nous analysons vos besoins, définissons des objectifs clairs et élaborons des solutions personnalisées. 
-Chaque étape de notre processus est pensée pour optimiser l’efficacité, garantir la qualité et assurer des résultats mesurables.</p>
-        <a href="#" class="card-link">Voir pmus</a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img"><img src="2.jpg" alt=""></div>
-      <div class="card-body">
-        <h3>Notre expertise</h3>
-        <p>Notre expertise repose sur des années d’expérience et une connaissance approfondie de notre secteur. 
-Nous proposons des solutions sur mesure, alliant innovation, performance et efficacité, 
-pour répondre aux besoins spécifiques de chaque client et assurer la réussite de leurs projets.</p>
+        <h3>Notre méthodologie</h3>
+        <p>Notre méthodologie repose sur une approche structurée et centrée sur le client. Nous analysons vos besoins, définissons des objectifs clairs et élaborons des solutions personnalisées pour des résultats mesurables.</p>
         <a href="#" class="card-link">Voir plus</a>
       </div>
     </div>
     <div class="card">
-      <div class="card-img"><img src="3.png" alt=""></div>
+      <div class="card-img"><img src="2.jpg" alt="Notre expertise"></div>
       <div class="card-body">
-        <h3>Nos domaines d’intervention</h3>
-        <p>Nous intervenons dans plusieurs domaines clés pour accompagner votre développement et optimiser vos résultats. 
-Que ce soit le conseil stratégique, le marketing digital, le développement web ou la formation, 
-notre expertise vous permet de bénéficier de solutions sur mesure, efficaces et adaptées à vos besoins.</p>
+        <h3>Notre expertise</h3>
+        <p>Notre expertise repose sur des années d'expérience et une connaissance approfondie de notre secteur. Nous proposons des solutions sur mesure, alliant innovation, performance et efficacité.</p>
+        <a href="#" class="card-link">Voir plus</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="3.png" alt="Nos domaines d'intervention"></div>
+      <div class="card-body">
+        <h3>Nos domaines d'intervention</h3>
+        <p>Nous intervenons dans plusieurs domaines clés : conseil stratégique, marketing digital, développement web ou formation, avec des solutions sur mesure adaptées à vos besoins.</p>
         <a href="#" class="card-link">Voir plus</a>
       </div>
     </div>
@@ -107,45 +101,35 @@ notre expertise vous permet de bénéficier de solutions sur mesure, efficaces e
 
 <!-- SERVICES -->
 <section class="services">
-  <h2>Services Offertes</h2>
-  <p class="subtitle">Consultox is the best counseling accomplice for startup innovation organizations</p>
+  <h2>Services Offerts</h2>
+  <p class="subtitle">NexTech est votre meilleur partenaire pour le développement digital de votre entreprise</p>
   <div class="services-nav">
-    <button class="nav-btn">‹</button>
-    <button class="nav-btn">›</button>
+    <button class="nav-btn">&#8249;</button>
+    <button class="nav-btn">&#8250;</button>
   </div>
   <div class="services-grid">
     <div class="service-card">
       <svg class="icon" viewBox="0 0 48 48"><rect x="6" y="8" width="30" height="24" rx="2"/><line x1="6" y1="18" x2="36" y2="18"/><line x1="14" y1="24" x2="22" y2="24"/><path d="M38 32 L42 40 M34 40 L42 40"/></svg>
-      <h3>Developpemnt Web </h3>
-      <p>Nous concevons des sites web modernes, rapides et performants adaptés à vos besoins. 
-Que ce soit un site vitrine, un e-commerce ou une application web, nous mettons 
-l’accent sur l’expérience utilisateur, le design et la performance pour valoriser 
-votre présence en ligne.</p>
+      <h3>Développement Web</h3>
+      <p>Nous concevons des sites web modernes, rapides et performants adaptés à vos besoins. Sites vitrines, e-commerce ou applications web avec une expérience utilisateur optimale.</p>
       <a href="#" class="service-link">Voir plus</a>
     </div>
     <div class="service-card">
       <svg class="icon" viewBox="0 0 48 48"><polyline points="8,36 18,24 26,30 38,14"/><polyline points="32,14 38,14 38,20"/></svg>
       <h3>Marketing Digital</h3>
-      <p>Boostez la visibilité de votre entreprise grâce à des stratégies de marketing digital efficaces. 
-Nous vous accompagnons dans la gestion de vos réseaux sociaux, la publicité en ligne et la création 
-de contenu pour attirer, engager et convertir vos clients.</p>
+      <p>Boostez la visibilité de votre entreprise grâce à des stratégies de marketing digital efficaces. Réseaux sociaux, publicité en ligne et création de contenu.</p>
       <a href="#" class="service-link">Voir plus</a>
     </div>
     <div class="service-card">
       <svg class="icon" viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="M24 14 C20 14 16 18 16 24 C16 30 20 34 24 34"/><path d="M24 14 C28 14 32 18 32 24 C32 30 28 34 24 34"/><line x1="16" y1="20" x2="32" y2="20"/><line x1="14" y1="28" x2="34" y2="28"/></svg>
-      <h3>UX / UI</h3>
-      <p>Nous créons des interfaces intuitives et esthétiques centrées sur l’utilisateur. 
-        Grâce à une approche UX stratégique et un design UI moderne, nous améliorons 
-        l’expérience de vos utilisateurs afin d’augmenter leur engagement et la performance 
-        de votre produit digital.</p>
+      <h3>UX / UI Design</h3>
+      <p>Nous créons des interfaces intuitives et esthétiques centrées sur l'utilisateur. UX stratégique et design UI moderne pour améliorer l'engagement de vos utilisateurs.</p>
       <a href="#" class="service-link">Voir plus</a>
     </div>
     <div class="service-card">
       <svg class="icon" viewBox="0 0 48 48"><path d="M24 8 C16 8 10 14 10 22 C10 30 16 36 24 36 C32 36 38 30 38 22"/><path d="M30 8 L38 8 L38 16"/><line x1="38" y1="8" x2="28" y2="18"/><path d="M18 22 L22 26 L30 18"/></svg>
       <h3>Formation</h3>
-      <p>Nous proposons des formations pratiques et adaptées pour développer vos compétences 
-dans le digital. Que vous soyez débutant ou professionnel, nos programmes vous permettent 
-de maîtriser les outils essentiels et d’être rapidement opérationnel sur le marché.</p>
+      <p>Des formations pratiques et adaptées pour développer vos compétences dans le digital. Débutant ou professionnel, nos programmes vous rendent rapidement opérationnel.</p>
       <a href="#" class="service-link">Voir plus</a>
     </div>
   </div>
@@ -153,9 +137,9 @@ de maîtriser les outils essentiels et d’être rapidement opérationnel sur le
 
 <!-- CTA BANNER -->
 <section class="cta-banner">
-  <h2>Nous sommes passionées par notre travail &</h2>
-  <h2><span>Contibuons à la croissance de votre entreprise</span></h2>
-  <div style="margin-top:28px;display:flex;justify-content:center;align-items:center;gap:30px;">
+  <h2>Nous sommes passionnés par notre travail &amp;</h2>
+  <h2><span>Contribuons à la croissance de votre entreprise</span></h2>
+  <div class="cta-bottom">
     <span class="phone">+221 76 880 34 79</span>
     <div class="divider-v"></div>
     <button class="btn-teal">Contactez-nous</button>
@@ -165,91 +149,104 @@ de maîtriser les outils essentiels et d’être rapidement opérationnel sur le
 <!-- CASE STUDY -->
 <section class="case-study">
   <div class="inner">
-    <div>
-      <span class="eyebrow">Pourquoi noius choisir</span>
+    <div class="case-text">
+      <span class="eyebrow">Pourquoi nous choisir</span>
       <h2>Nous travaillons en collaboration avec des entreprises nationales et internationales</h2>
       <div class="divider"></div>
-      <p>Choisir notre cabinet, c’est opter pour une expertise reconnue et un accompagnement personnalisé. 
-Nous mettons votre réussite au cœur de notre approche en alliant professionnalisme, innovation et respect des délais. 
-Notre équipe s’engage à comprendre vos besoins pour proposer des solutions sur mesure, efficaces et durables.</p>
+      <p>Choisir notre cabinet, c'est opter pour une expertise reconnue et un accompagnement personnalisé. Nous mettons votre réussite au cœur de notre approche en alliant professionnalisme, innovation et respect des délais.</p>
       <button class="btn-outline-dark">En savoir plus</button>
     </div>
     <div class="video-wrap">
-      <div class="video-placeholder">
+      <img src="6.jpg" alt="Notre équipe" class="case-img-real">
+      <div class="play-overlay">
         <div class="play-btn"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- OUR CASES -->
-<!-- <section class="our-cases"> -->
-  <!-- <h2>Our Cases</h2>
-  <div class="filter-tabs">
-    <a href="#" class="active">All</a>
-    <a href="#">Travel & Aviation</a>
-    <a href="#">Consumer Insight</a>
-    <a href="#">financial Services</a>
-    <a href="#">Taxes & Effiences</a>
-  </div> -->
-
-  <!-- / -->
-  <!-- <div class="cases-grid">
-    <div>
-      <div class="cases-grid case-img" style="background:linear-gradient(135deg,#7a8fa0,#5a6f80);height:160px;"></div>
-      <div class="case-label">Financial Consultancy</div>
-    </div>
-    <div>
-      <div class="cases-grid case-img" style="background:linear-gradient(135deg,#8a9aaa,#6a7a8a);height:160px;"></div>
-      <div class="case-label">Business Growth</div>
-    </div>
-    <div>
-      <div class="cases-grid case-img" style="background:linear-gradient(135deg,#6a8090,#4a6070);height:160px;"></div>
-      <div class="case-label">Saving Planning</div>
-    </div>
-    <div>
-      <div class="cases-grid case-img" style="background:linear-gradient(135deg,#9aaaba,#7a8a9a);height:160px;"></div>
-      <div class="case-label">Market Analysis</div>
-    </div>
-  </div>
-</section> -->
-
 <!-- TESTIMONIALS -->
 <section class="testimonials">
-  <button class="nav-arrow left">‹</button>
-  <button class="nav-arrow right">›</button>
+  <button class="nav-arrow left">&#8249;</button>
+  <button class="nav-arrow right">&#8250;</button>
   <div class="inner">
     <div class="avatar">
-      <div style="width:70px;height:70px;background:linear-gradient(135deg,#4a6070,#6a8090);border-radius:50%;"></div>
+      <img src="5.jpg" alt="Mamadou Lamine TAMBA" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
     </div>
     <div>
-      <p class="testimonial-text">Nous avons eu l’honneur de collaborer avec Nextech sur plusieurs projets d’Amberhure, appréciant particulièrement leur professionnalisme et leur rigueur dans le respect des délais.</p>
-      <div class="testimonial-author">Mamadou Lamine TAMBA </div>
-      <div class="testimonial-role">CEO Khalam Serices</div>
+      <p class="testimonial-text">Nous avons eu l'honneur de collaborer avec Nextech sur plusieurs projets, appréciant particulièrement leur professionnalisme et leur rigueur dans le respect des délais. Une équipe compétente et à l'écoute.</p>
+      <div class="testimonial-author">Mamadou Lamine TAMBA</div>
+      <div class="testimonial-role">CEO Khalam Services</div>
+    </div>
+  </div>
+</section>
+
+<!-- LATEST NEWS -->
+<section class="latest-news">
+  <h2>Dernières Actualités</h2>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-img">
+        <img src="8.jpg" alt="Article 1">
+        <div class="news-date-badge">08 Avr. 2026</div>
+      </div>
+      <div class="news-body">
+        <h3>Les tendances du développement web en 2026</h3>
+        <p>Découvrez les technologies et frameworks qui dominent le marché cette année et comment les intégrer dans vos projets pour rester compétitif.</p>
+        <a href="#" class="news-link">Lire la suite</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-img">
+        <img src="7.jpg" alt="Article 2">
+        <div class="news-date-badge">01 Avr. 2026</div>
+      </div>
+      <div class="news-body">
+        <h3>Intelligence artificielle et marketing digital</h3>
+        <p>Comment l'IA transforme les stratégies de marketing digital et permet aux entreprises d'optimiser leur présence en ligne efficacement.</p>
+        <a href="#" class="news-link">Lire la suite</a>
+      </div>
+    </div>
+    <div class="news-list">
+      <div class="news-list-item">
+        <h4>UX Design : les meilleures pratiques pour 2026</h4>
+        <div class="date">Mars 20 2026</div>
+      </div>
+      <hr style="border:none;border-top:1px solid #eee;">
+      <div class="news-list-item">
+        <h4>Formation tech : boostez vos compétences digitales</h4>
+        <div class="date">Mars 10 2026</div>
+      </div>
+      <hr style="border:none;border-top:1px solid #eee;">
+      <div class="news-list-item">
+        <h4>Pourquoi le marketing digital est indispensable en 2026</h4>
+        <div class="date">Fév 28 2026</div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- PARTNERS -->
- <h2> <center>Nos partenaires</center></h2>
-  <div class="logos">
-<section class="partners">
-  
-  <div class="logos">
-    <div class="partner-logo"><div class="partner-icon"></div> Khalam<br><small>Services</small></div>
-    <div class="partner-logo"><div class="partner-icon"></div> Goût <br><small>et Partages</small></div>
-    <div class="partner-logo">MAKEDA<br><small>Couture</small></div>
-    <div class="partner-logo"><div class="partner-icon"></div> Senegal <br><small>Transport</small></div>
-    <div class="partner-logo">Elimane<br><small>Consulting</small></div>
+<section class="partners-section">
+  <h2 class="partners-title">Nos Partenaires</h2>
+  <div class="partners">
+    <div class="logos">
+      <div class="partner-logo"><div class="partner-icon"></div><span>Khalam<br><small>Services</small></span></div>
+      <div class="partner-logo"><div class="partner-icon"></div><span>Goût<br><small>et Partage</small></span></div>
+      <div class="partner-logo"><span>MAKEDA<br><small>Couture</small></span></div>
+      <div class="partner-logo"><div class="partner-icon"></div><span>Senegal<br><small>Transport</small></span></div>
+      <div class="partner-logo"><span>Elimane<br><small>Consulting</small></span></div>
+    </div>
   </div>
 </section>
 
 <!-- APPOINTMENT BANNER -->
 <section class="appointment">
-  <div class="bg-people"></div>
+  <img src="2.jpg" alt="Appointment background" class="appt-bg">
+  <div class="appt-overlay"></div>
   <div class="appt-content">
-    <h2>Relations clients avec unne <br>Communication transparente ...</h2>
-    <p>Les solutions Nextech peuvent vous aider à y parvenir .</p>
+    <h2>Relations clients avec une<br>communication transparente ...</h2>
+    <p>Les solutions NexTech peuvent vous aider à y parvenir.</p>
     <button class="btn-gold">Prenez Rendez-vous</button>
   </div>
 </section>
@@ -271,8 +268,8 @@ Notre équipe s’engage à comprendre vos besoins pour proposer des solutions s
         </div>
       </div>
       <div class="footer-contact">
-        <p class="phone">+221 76 880 34 79 </p>
-        <p>rokhayatambadou5@gmail.com</p>
+        <p class="phone">+221 76 880 34 79</p>
+        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3e4c5155565f475f4a5f535c5f5a514b0b7e59535f5752105d5153">[email&#160;protected]</a></p>
         <p>Cité Fadia - DAKAR</p>
       </div>
     </div>
@@ -280,7 +277,7 @@ Notre équipe s’engage à comprendre vos besoins pour proposer des solutions s
       <h4>Liens utiles</h4>
       <ul>
         <li><a href="#">Accueil</a></li>
-        <li><a href="#">A propos </a></li>
+        <li><a href="#">À propos</a></li>
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Devis</a></li>
         <li><a href="#">Contact</a></li>
@@ -289,19 +286,19 @@ Notre équipe s’engage à comprendre vos besoins pour proposer des solutions s
     <div>
       <h4>Services</h4>
       <ul>
-        <li><a href="#">Developpemnt Web</a></li>
+        <li><a href="#">Développement Web</a></li>
         <li><a href="#">Marketing Digital</a></li>
         <li><a href="#">UX / UI</a></li>
         <li><a href="#">Formation</a></li>
-        <li><a href="#">Audit & Conseil</a></li>
+        <li><a href="#">Audit &amp; Conseil</a></li>
       </ul>
     </div>
     <div>
       <h4>Newsletter</h4>
       <p style="font-size:13px;margin-bottom:12px;font-style:italic;">Ne ratez pas notre prochain article.</p>
       <div class="newsletter-form">
-        <input type="email" placeholder="Entrer votre adreese mail">
-        <button>➤</button>
+        <input type="email" placeholder="Entrer votre adresse mail">
+        <button>&#10148;</button>
       </div>
       <div class="social-icons">
         <div class="social-icon">f</div>
@@ -312,9 +309,10 @@ Notre équipe s’engage à comprendre vos besoins pour proposer des solutions s
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© Copyright NexTech Consulting Firm 2026 . All right reserved.</p>
+    <p>© Copyright NexTech Consulting Firm 2026. All rights reserved.</p>
   </div>
 </footer>
 
-</body>
-</html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElement
