@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<title>NexTech</title>
+</head>
+
+
+<style>
+body{
+  margin:0;
+  font-family:'Open Sans', sans-serif;
+  color:#222;
+  line-height:1.7;
+  background:#fff;
+}
+
+/* GLOBAL */
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+h1,h2,h3{
+  font-family:'Playfair Display', serif;
+}
+
+/* HERO */
+.hero{
+  padding:100px 0;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  max-width:750px;
+  margin:auto;
+  font-size:18px;
+}
+
+.hero img{
+  margin-top:40px;
+  width:260px;
+  border-radius:20px;
+}
+
+/* SECTION */
+section{
+  padding:80px 0;
+}
+
+.section-light{
+  background:#f7f7f7;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:32px;
+}
+
+/* LIST */
+.list{
+  max-width:700px;
+  margin:auto;
+}
+
+.list li{
+  margin-bottom:12px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* TEXT CENTER */
+.center{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+}
+
+/* CTA */
+.cta{
+  text-align:center;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  margin:10px;
+  text-decoration:none;
+  background:#000;
+  color:#fff;
+  border-radius:5px;
+  font-size:15px;
+}
+
+/* FORM */
+form{
+  max-width:550px;
+  margin:auto;
+}
+
+input, textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:12px;
+  border:1px solid #ddd;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  background:black;
+  color:white;
+  border:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1{
+    font-size:30px;
+  }
+
+  h2{
+    font-size:24px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+<div class="topbar">
+  <div class="contact-info">
+    <span>📞 +221 76 880 34 79</span>
+    <span>✉ rokhayatambadou5@gmail.com</span>
+  </div>
+  <div class="right">
+    <a href="#">f</a>
+    <a href="#">t</a>
+    <a href="#">g+</a>
+    <a href="#">in</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">
+    <svg class="logo-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="20" stroke="#c8a84b" stroke-width="1.5"/>
+      <path d="M12 22 C12 16, 16 12, 22 12 C28 12, 32 16, 32 22" stroke="#1a8c6e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M12 22 C12 28, 16 32, 22 32" stroke="#c8a84b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="22" cy="22" r="4" fill="#c8a84b"/>
+    </svg>
+    <div class="logo-text">
+      <span>NexTech</span>
+      <span>Entreprise Tech</span>
+    </div>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#" class="active">Accueil</a>
+    <a href="apropos.html">À propos</a>
+    <a href="services.html">Services</a>
+    <a href="projets.html">Projets</a>
+    <!-- <a href="#">Blog</a> -->
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-search">🔍</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="4.jpg" class="hero-bg-img" alt="Hero background">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Fournir un service de conseil de la meilleure qualité</h1>
+    <p>Nous sommes passionnés par l'obtention de meilleurs résultats pour nos clients, des résultats qui vont au-delà des aspects financiers et qui sont entièrement personnalisés.</p>
+    <div class="hero-buttons">
+      <button class="btn-outline">En savoir plus</button>
+      <button class="btn-gold">Contactez-Nous</button>
+    </div>
+  </div>
+  <button class="hero-arrow left">&#8249;</button>
+  <button class="hero-arrow right">&#8250;</button>
+</section>
+
+
+<!-- HERO -->
+<section class="hero container">
+  <h1>L’experte digitale qui vous rapproche de vos clients</h1>
+  <p>
+    2 ans d’expertise en communication de proximité pour vous accompagner
+    dans le développement de votre visibilité et de votre activité.
+  </p>
+ 
+
+  <!-- <img src="4.jpg" alt="Christine"> -->
+
+  <!-- <p style="margin-top:20px;"><em>Allier créativité, pédagogie et responsabilité</em></p> -->
+</section>
+
+<!-- SERVICES -->
+<section class="container">
+  <h2>Ce que je vous apporte</h2>
+
+  <ul class="list">
+    <li>Création de sites internet professionnels</li>
+    <li>Référencement naturel (SEO)</li>
+    <li>Stratégie de communication digitale</li>
+    <li>Formation et accompagnement</li>
+  </ul>
+</section>
+
+<!-- STORY -->
+<section class="section-light">
+  <div class="container">
+    <h2>Mon parcours</h2>
+
+    <p class="center">
+      Après plus de 2 ans dans le Numérique, j’accompagne aujourd’hui
+      les entreprises dans leur transition digitale avec une approche humaine,
+      pédagogique et orientée résultats.
+    </p>
+  </div>
+</section>
+
+<!-- VALEURS -->
+<section class="container">
+  <h2>Mes engagements</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Digital responsable</h3>
+      <p>Concevoir des sites éco-responsables et durables.</p>
+    </div>
+
+    <div class="card">
+      <h3>Entrepreneuriat féminin</h3>
+      <p>Accompagner et valoriser les femmes entrepreneures.</p>
+    </div>
+
+    <div class="card">
+      <h3>Approche humaine</h3>
+      <p>Une relation basée sur l’écoute et la pédagogie.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="section-light">
+  <div class="container">
+    <h2>Mes expertises</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Communication</h3>
+        <p>Plus de 25 ans d’expérience dans les médias.</p>
+      </div>
+
+      <div class="card">
+        <h3>Marketing digital</h3>
+        <p>SEO, création de sites et stratégie digitale.</p>
+      </div>
+
+      <div class="card">
+        <h3>Accompagnement</h3>
+        <p>Conseil personnalisé pour chaque projet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="container cta">
+  <h2>Travaillons ensemble</h2>
+
+  <p>Vous avez un projet ? Parlons-en.</p>
+
+  <a href="contact.html" class="btn">Demander un devis</a>
+  <a href="contact.html" class="btn">Prendre rendez-vous</a>
+</section>
+
+<!-- CONTACT -->
+<section class="section-light">
+  <div class="container">
+    <h2>Contact</h2>
+
+    <form action="https://formspree.io/f/xrbplqyo" method="POST">
+      <input type="text" name="prenom" placeholder="Prénom" required>
+      <input type="text" name="nom" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Votre message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <svg width="38" height="38" viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="20" stroke="#c8a84b" stroke-width="1.5"/>
+          <path d="M12 22 C12 16, 16 12, 22 12 C28 12, 32 16, 32 22" stroke="#1a8c6e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M12 22 C12 28, 16 32, 22 32" stroke="#c8a84b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="22" cy="22" r="4" fill="#c8a84b"/>
+        </svg>
+        <div class="logo-text">
+          <span>NexTech</span>
+          <span style="color:#8a9aaa;">Entreprise Tech</span>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <p class="phone">+221 76 880 34 79</p>
+        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3e4c5155565f475f4a5f535c5f5a514b0b7e59535f5752105d5153">[email&#160;protected]</a></p>
+        <p>Cité Fadia - DAKAR</p>
+      </div>
+    </div>
+    <div>
+      <h4>Liens utiles</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Devis</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Développement Web</a></li>
+        <li><a href="#">Marketing Digital</a></li>
+        <li><a href="#">UX / UI</a></li>
+        <li><a href="#">Formation</a></li>
+        <li><a href="#">Audit &amp; Conseil</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p style="font-size:13px;margin-bottom:12px;font-style:italic;">Ne ratez pas notre prochain article.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Entrer votre adresse mail">
+        <button>&#10148;</button>
+      </div>
+      <div class="social-icons">
+        <div class="social-icon">f</div>
+        <div class="social-icon">in</div>
+        <div class="social-icon">t</div>
+        <div class="social-icon">g+</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© Copyright NexTech Consulting Firm 2026. All rights reserved.</p>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElement
+
